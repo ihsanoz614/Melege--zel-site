@@ -1,0 +1,75 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    padding: 30px;
+    margin: 0;
+    color: #4b004f;
+}
+.bg {
+    background: url('resimler/gul-arkaplan.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
+}
+.galeri img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+.buton {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #e75480;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.buton:hover {
+    background-color: #d63a6c;
+}
+footer {
+    margin-top: 30px;
+    font-style: italic;
+}
+.kalpler {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+.kalp-u {
+    position: absolute;
+    animation: ucus 6s ease-in-out forwards;
+    font-size: 30px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    pointer-events: none;
+}
+@keyframes ucus {
+    0% { top: 100%; opacity: 0; }
+    50% { opacity: 1; }
+    100% { top: -10%; opacity: 0; transform: translateX(-50%) rotate(360deg); }
+}
+.not {
+    font-style: italic;
+    font-size: 14px;
+    color: #555;
+    margin-top: 20px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Güzel Sözler</title>
+    <link rel="stylesheet" href="stil.css">
+    <script src="efekt.js"></script>
+    <script>
+        const sozler = [
+            "Sen gülünce dünya susuyor, kalbim konuşuyor.",
+            "Sen benim en güzel tesadüfümsün Melek.",
+            "Gözlerinde kaybolmak bile huzur veriyor.",
+            "Her bakışın bir şiir, her gülüşün bir melodidir.",
+            "Sen hayatıma düşen en güzel cümlesin.",
+            "Kalbimin en güzel köşesi sana ait.",
+            "Varlığın hayatımın şiiri oldu.",
+            "Sana bakmak bir ömre bedel."
+        ];
+        function yeniSoz() {
+            const rastgele = Math.floor(Math.random() * sozler.length);
+            document.getElementById("soz").innerText = sozler[rastgele];
+        }
+        window.onload = yeniSoz;
+    </script>
+</head>
+<body class="bg">
+    <div class="kalpler"></div>
+    <div class="container">
+        <h1>Senin İçin Sözler 💌</h1>
+        <p id="soz"></p>
+        <div class="butonlar">
+            <button class="buton" onclick="yeniSoz()">Yenile 🔁</button>
+            <a href="index.html" class="buton">Ana Sayfa</a>
+            <button onclick="kalpEfekti()" class="buton">💜</button>
+        </div>
+        <div class="galeri">
+            <img src="resimler/melek5.jpg">
+            <img src="resimler/melek6.jpg">
+            <img src="resimler/melek7.jpg">
+            <img src="resimler/melek8.jpg">
+        </div>
+    </div>
+</body>
+</html>
